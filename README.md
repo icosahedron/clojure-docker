@@ -77,3 +77,4 @@ Add a browser based terminal for terminal interaction
 
 * xterm.js with websocket to container
 * web server
+* reset the repl state to new
