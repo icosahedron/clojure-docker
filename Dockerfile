@@ -15,5 +15,7 @@ RUN mkdir -p .clojure
 COPY .clojure/deps.edn .clojure
 RUN clj -P
 
+EXPOSE 9000-10000
+
 ENTRYPOINT ["clojure", "-M:alpha/hotload-libs:repl/nrepl", "-p", "9999", "-b", "0.0.0.0"]
 # ENTRYPOINT ["/bin/bash"]
